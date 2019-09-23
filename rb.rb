@@ -16,7 +16,8 @@ def prompt_user
 end
 
 def get_user_input
-  gets.chomp.strip
+  input = gets.strip
+  input
 end
 
 def end_game(card_total)
@@ -62,3 +63,5 @@ until card_total > 21 do
 end
 end_game(card_total)
 end
+
+runner
